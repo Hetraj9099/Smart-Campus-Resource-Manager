@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Resource</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <h1>Book a Resource</h1>
+      <p>Select a campus resource and reserve a time slot.</p>
+      <nav class="nav">
+        <a href="index.html">Resources</a>
+        <a href="booking.html">Book Resource</a>
+        <a href="admin.html">Admin</a>
+      </nav>
+    </header>
+
+    <main class="content two-column">
+      <section class="panel">
+        <h2>Booking Form</h2>
+        <form id="bookingForm" class="form">
+          <label for="resourceSelect">Resource</label>
+          <select id="resourceSelect" required></select>
+
+          <label for="userName">Your Name</label>
+          <input id="userName" type="text" placeholder="Enter your name" required>
+
+          <label for="timeSlot">Time Slot</label>
+          <input id="timeSlot" type="text" placeholder="Example: 2 PM - 3 PM" required>
+
+          <button type="submit">Book Now</button>
+        </form>
+        <p id="bookingMessage" class="message"></p>
+      </section>
+
+      <section class="panel">
+        <h2>Recent Bookings</h2>
+        <div id="bookingList" class="list"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/booking.js"></script>
+</body>
+</html>

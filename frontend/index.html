@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Campus Resource Manager</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <h1>Smart Campus Resource Manager</h1>
+      <p>View available campus resources and plan your bookings easily.</p>
+      <nav class="nav">
+        <a href="index.html">Resources</a>
+        <a href="booking.html">Book Resource</a>
+        <a href="admin.html">Admin</a>
+      </nav>
+    </header>
+
+    <main class="content">
+      <section class="panel">
+        <div class="section-header">
+          <h2>Campus Resources</h2>
+          <button id="refreshButton" type="button">Refresh</button>
+        </div>
+        <p id="resourceMessage" class="message"></p>
+        <div id="resourceList" class="card-grid"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

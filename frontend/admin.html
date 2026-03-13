@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Resource Manager</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <h1>Admin Resource Manager</h1>
+      <p>Add new campus resources for students to book.</p>
+      <nav class="nav">
+        <a href="index.html">Resources</a>
+        <a href="booking.html">Book Resource</a>
+        <a href="admin.html">Admin</a>
+      </nav>
+    </header>
+
+    <main class="content two-column">
+      <section class="panel">
+        <h2>Add Resource</h2>
+        <form id="resourceForm" class="form">
+          <label for="resourceName">Name</label>
+          <input id="resourceName" type="text" placeholder="Example: Seminar Hall" required>
+
+          <label for="resourceType">Type</label>
+          <input id="resourceType" type="text" placeholder="Example: Hall" required>
+
+          <label for="resourceLocation">Location</label>
+          <input id="resourceLocation" type="text" placeholder="Example: Block A" required>
+
+          <label class="checkbox-row" for="resourceAvailable">
+            <input id="resourceAvailable" type="checkbox" checked>
+            Available for booking
+          </label>
+
+          <button type="submit">Add Resource</button>
+        </form>
+        <p id="adminMessage" class="message"></p>
+      </section>
+
+      <section class="panel">
+        <h2>Current Resources</h2>
+        <div id="adminResourceList" class="list"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>

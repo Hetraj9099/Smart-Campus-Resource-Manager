@@ -1,0 +1,14 @@
+{
+  "name": "smart-campus-resource-manager",
+  "version": "1.0.0",
+  "description": "Hackathon-friendly campus resource booking app",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^4.22.1",
+    "sqlite3": "^5.1.7"
+  }
+}
